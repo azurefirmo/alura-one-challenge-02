@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jogo da forca ONE+Alura</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <header>
+    <a target="_blank" href="https://www.alura.com.br/">
+      <img src="css/img/vector.png" alt="Logo Alura" />
+    </a>
+  </header>
+  <body>
+    <main>
+      <div id="inicio" class="tela">
+        <div>
+          <button class="btn btn1" id="btn-iniciar">Começar a jogar</button>
+        </div>
+        <div>
+          <button class="btn btn2" id="inserir-palavra">
+            Adicionar nova palavra
+          </button>
+        </div>
+      </div>
+      <h3>Challenge Oracle + Alura</h3>
+
+      <div id="in-palavra" class="tela2 oculta">
+        <div>
+          <textarea
+            type="text"
+            name="palavra"
+            id="palavra"
+            cols="40"
+            rows="9"
+            placeholder="Digite uma palavra ou frase"
+          ></textarea>
+        </div>
+        <div id="insert">
+          <div id="info">
+            <img
+              src="css/img/info.svg"
+              class="info"
+              alt="Símbolo de exclamação!"
+            />
+            <label for="info"> Maximo de 8 Letras</label>
+          </div>
+
+          <button class="btn btn3" id="gravar">Salvar e começar</button>
+          <button class="btn btn4" id="cancelar">Cancelar</button>
+        </div>
+      </div>
+
+      <div id="jogo" class="tela3 oculta">
+        <div>
+          <canvas id="forca" height="400px" width="980px"></canvas>
+        </div>
+
+        <h3 id="word">Palavras digitadas</h3>
+        <div class="new-over">
+          <button class="btn btn5" id="novo-jogo">Novo Jogo</button>
+          <button class="btn btn6" id="desistir">Desistir</button>
+        </div>
+      </div>
+
+      <div class="ref">
+        <footer>
+          <strong>Desenvolvido por:</strong>
+          <a class="plink" target="_blank" href="https://azurefirmo.vercel.app"
+            >azure_firmo</a
+          >
+          <ul>
+            <a target="_blank" href="https://www.linkedin.com/in/azurefirmo"
+              ><img
+                class="image-footer"
+                src="css/img/linkedin.png"
+                alt="Ícone do LinkedIn"
+            /></a>
+            <a target="_blank" href="https://github.com/azurefirmo"
+              ><img
+                class="image-footer"
+                src="css/img/github.png"
+                alt="Ícone do GitHub"
+            /></a>
+          </ul>
+        </footer>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
